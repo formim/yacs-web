@@ -17,7 +17,7 @@
         </div>
       </div>
       <button class="schedule-button">Download ICS</button>
-      <button class="schedule-button" [disabled]="isTemporary">Copy Schedule Link</button>
+      <button class="schedule-button" (click) = "copyScheduleLink()">Copy Schedule Link</button>
     </div>
     <div class="schedule-status">
       {{ statusText() }}
